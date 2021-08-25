@@ -1,0 +1,67 @@
+@import url("http://fonts.cdnfonts.com/css/bahnschrift");
+header {
+  margin-top: 3vw;
+  margin-left: 1.5vw;
+  margin-bottom: 3vw;
+  font-family: "bahnschrift";
+  font-size: 5vw;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 7vw 16vw;
+  text-align: center;
+  text-decoration: none;
+  font-family: "bahnschrift";
+  font-size: 5vw;
+  margin: 4vw 2vw;
+  cursor: pointer;
+}
+img {
+  max-width: 20vw;
+  height: auto;
+}
+footer {
+  font-family: "bahnschrift";
+  font-size: 1.5vw;
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+}
+h2 {
+  font-size: 2vw;
+  margin-left: 2vw;
+}
+ul {
+  font-family: "bahnschrift";
+  font-size: 1.8vw;
+  list-style: none;
+  margin-right: 6vw;
+  /* line-height: 2vw; */
+}
+h3 {
+  font-size: 1.2vw;
+  font-family: "bahnschrift";
+}
+p {
+  font-size: 1.2vw;
+  font-family: "bahnschrift";
+}
+article {
+  padding-left: 3vw;
+  padding-bottom: 3vw;
+}
+div {
+  color: red;
+  /* visibility: hidden; */
+}
