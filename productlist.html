@@ -8,26 +8,27 @@
   <body>
     <header>
       <header><a href="category.html">HOME</a></header>
-      <h2>PUMA</h2>
     </header>
     <main>
-      <article>
-        <a href="product.html">
-          <img
-            src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
-            alt="Black Fleece Jacket"
-          />
-        </a>
-        <h3>Black Fleece Jacket</h3>
-        <p>Price: DKK 1595,-</p>
-        <div>
-          <p>ON SALE</p>
-        </div>
-        <div>
-          <p>SOLD OUT</p>
-        </div>
-      </article>
-      <article>
+      <template id="smallProductTemplate">
+        <article>
+          <a href="product.html?id=1164">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Black Fleece Jacket"
+            />
+          </a>
+          <h3 class="name">Black Fleece Jacket</h3>
+          <p class="price">Price: DKK 1595,-</p>
+          <div class="on-sale">
+            <p>ON SALE</p>
+          </div>
+          <div class="sold-out">
+            <p>SOLD OUT</p>
+          </div>
+        </article>
+      </template>
+      <!-- <article>
         <a href="product.html">
           <img
             src="https://kea-alt-del.dk/t7/images/webp/640/1529.webp"
@@ -87,11 +88,12 @@
         </a>
         <h3>Big Cat Backpack Black</h3>
         <p>Price: DKK 1595,-</p>
-      </article>
+      </article> -->
     </main>
     <footer>
       Data comes from
       https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset
     </footer>
+    <script src="productlist.js"></script>
   </body>
 </html>
