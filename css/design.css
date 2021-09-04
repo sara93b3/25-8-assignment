@@ -1,14 +1,20 @@
 @import url("http://fonts.cdnfonts.com/css/bahnschrift");
+
+:root {
+  --primary-color: black;
+  --secondary-color: white;
+  --margin-padding: 3vw;
+}
 header {
-  margin-top: 3vw;
+  margin-top: var(--margin-padding);
   margin-left: 1.5vw;
-  margin-bottom: 3vw;
+  margin-bottom: var(--margin-padding);
   font-family: "bahnschrift";
   font-size: 5vw;
-  color: black;
+  color: var(--primary-color);
 }
 a:visited {
-  color: black;
+  color: var(--primary-color);
 }
 main {
   display: flex;
@@ -16,10 +22,10 @@ main {
   flex-wrap: wrap;
 }
 .button {
-  background-color: black;
+  background-color: var(--primary-color);
   border: none;
-  color: white;
-  padding: 7vw 16vw;
+  color: var(--secondary-color);
+  padding: 5vw 11vw;
   text-align: center;
   text-decoration: none;
   font-family: "bahnschrift";
@@ -35,8 +41,8 @@ footer {
   font-family: "bahnschrift";
   font-size: 1.5vw;
   text-align: center;
-  margin-top: 3vw;
-  margin-bottom: 3vw;
+  margin-top: var(--margin-padding);
+  margin-bottom: var(--margin-padding);
 }
 h2 {
   font-size: 2vw;
@@ -58,10 +64,24 @@ p {
   font-family: "bahnschrift";
 }
 article {
-  padding-left: 3vw;
-  padding-bottom: 3vw;
+  padding-left: var(--margin-padding);
+  padding-bottom: var(--margin-padding);
 }
 div {
   color: red;
   /* visibility: hidden; */
+}
+.on-sale::before {
+  content: "-";
+  color: red;
+}
+.on-sale::after {
+  content: "%";
+  color: red;
+}
+.price::after {
+  content: "DKK";
+}
+.sold-out {
+  color: white;
 }
